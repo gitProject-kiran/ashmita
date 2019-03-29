@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="header">
+  <mat-toolbar-row>
+    <span>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <img src="../../assets/logo.png" [height]="60">
+    </span>
+    
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
+    <span class="example-spacer"></span>
+
+    
+
+    <mat-icon>person</mat-icon>
+    <span routerLink="/login">Login</span>
+  </mat-toolbar-row>
+</mat-toolbar>
